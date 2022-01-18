@@ -11,41 +11,36 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.lightBlueAccent,
+        backgroundColor: Colors.orangeAccent,
         body: SafeArea(
-          child: Column(
-            //mainAxisSize: MainAxisSize.min ,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                  height: 100.0,
-                  width: 100.0,
-                  color: Colors.deepOrangeAccent,
-                  child: Center(child: Text('Container 1'))),
-              SizedBox(width: 10,),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.white,
-                child: Center(child: Text('Container 2')),
-              ),
-              SizedBox(width: 10),
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.green,
-                child: Center(child: Stack(
-                  children: [
-                    Text('Container 3'),
-                  ],
-                )),
-              )
-            ],
-          ),
-        ),
+            child: Column(
+          children: [
+            CircleAvatar(
+              radius: 50,
+              backgroundColor: Colors.deepOrange,
+              backgroundImage: AssetImage('images/pm.png'),
+            ),
+            Text(
+              'Jai Shree Ram',
+              style: TextStyle(
+                fontFamily: 'Pacifico',
+                  fontSize: 40,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold),
+            ),
+            Text('Narendra Damodardas Modi',
+            style: TextStyle(
+              fontFamily: 'AmaticSC',
+              fontSize: 30,
+                color: Colors.white60,
+              fontWeight: FontWeight.bold)
+            )
+
+
+          ],
+
+        )),
       ),
     );
   }
 }
-
