@@ -6,7 +6,7 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="16"
-9        android:targetSdkVersion="31" />
+9        android:targetSdkVersion="29" />
 10    <!--
 11         Flutter needs it to communicate with the running application
 12         to allow setting breakpoints, to provide hot reload, etc.
@@ -20,7 +20,7 @@
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 18-->[androidx.core:core:1.6.0] C:\Users\VISHESH KUMAR\.gradle\caches\transforms-2\files-2.1\5f663b08eec19eef9a9d1af662d9025e\core-1.6.0\AndroidManifest.xml:24:18-86
 19        android:debuggable="true"
-20        android:icon="@mipmap/ic_launcher"
+20        android:icon="@mipmap/launcher_icon"
 21        android:label="mycard" >
 22        <activity
 23            android:name="com.example.mycard.MainActivity"
